@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Feliz Dia dos Namorados ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating hearts layer -->
+<div id="heartsContainer" class="hearts-container"></div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <p class="hero-eyebrow">12 de Junho</p>
+  <h1 class="hero-title">Feliz Dia<br>dos Namorados</h1>
+  <p class="hero-subtitle">um cantinho só nosso, para celebrar tudo que a gente é.</p>
+  <div class="scroll-hint">
+    <span>role para baixo</span>
+    <div class="scroll-arrow">↓</div>
+  </div>
+</section>
+
+<!-- ===== CARTA RÁPIDA / INTRO ===== -->
+<section class="section intro-section">
+  <span class="section-eyebrow">001 — para começar</span>
+  <h2 class="section-title">Um pequeno lembrete</h2>
+  <p class="section-text">
+    Tem coisas que a gente sabe, mas nunca é demais repetir: você faz a minha vida mais leve,
+    mais bonita e muito mais divertida. Essa página é um presentinho — tem fotos nossas,
+    um quiz besta e uma coisinha esperando no fim.
+    Aproveita o passeio. 💛
+  </p>
+</section>
+
+<!-- ===== GALERIA DE FOTOS ===== -->
+<section class="section gallery-section">
+  <span class="section-eyebrow">002 — nossos momentos</span>
+  <h2 class="section-title">Fotos a dois</h2>
+  
+
+  <div class="gallery-grid">
+    <div class="gallery-item gallery-item--big">
+      <div class="photo-frame">
+        <img src="ano-novo.jpg" alt="Foto do casal 1" loading="lazy">
+        <span class="photo-caption">aquele dia incrível 📸</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="photo-frame">
+        <img src="brt.jpg" alt="Foto do casal 2" loading="lazy">
+        <span class="photo-caption">risadas demais</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="photo-frame">
+        <img src="cine.jpg" alt="Foto do casal 3" loading="lazy">
+        <span class="photo-caption">nosso lugar favorito</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="photo-frame">
+        <img src="compra.jpeg" alt="Foto do casal 4" loading="lazy">
+        <span class="photo-caption">aquela viagem</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="photo-frame">
+        <img src="trabalho.jpg" alt="Foto do casal 5" loading="lazy">
+        <span class="photo-caption">só nós dois</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="section timeline-section">
+  <span class="section-eyebrow">003 — nossa linha do tempo</span>
+  <h2 class="section-title">Como tudo começou</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot">🌱</div>
+      <div class="timeline-content">
+        <h3>O primeiro encontro</h3>
+        <p>Apesar de já nos falarmos pelo celular, lembro exatamente do nervosismo que senti quando te vi pela primeira vez (ainda mais pela quantidade de gente que tinha em volta). Depois que te chamei, quis te pagar um açaí e você negou, quem diria que hoje em dia pediria açaí quase todo dia &#x1F921;.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">💌</div>
+      <div class="timeline-content">
+        <h3>O primeiro "eu te amo"</h3>
+        <p>Aquele momento em que tudo ficou mais sério (e obviamente fui eu quem disse primeiro, porque eu amo muito mais...).</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">✈️</div>
+      <div class="timeline-content">
+        <h3>A união das escovas</h3>
+        <p>Quando decidimos viver juntos de verdade, e todo o perrengue que passamos na Santa Maura que, apesar de todas as dificuldades, apenas fortaleceu a nossa relação.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">💞</div>
+      <div class="timeline-content">
+        <h3>Hoje</h3>
+        <p>E aqui estamos — ainda escolhendo um ao outro, todos os dias.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUIZ DO CASAL ===== -->
+<section class="section quiz-section">
+  <span class="section-eyebrow">004 — quiz do casal</span>
+  <h2 class="section-title">O quanto você me conhece?</h2>
+  <p class="section-text">
+    Responda às perguntas pensando em vocês dois. No final, você vê a pontuação e uma mensagem especial.
+  </p>
+
+  <div class="quiz-card" id="quizCard">
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar" id="quizProgressBar"></div>
+    </div>
+    <p class="quiz-counter" id="quizCounter">Pergunta 1 de 5</p>
+
+    <h3 class="quiz-question" id="quizQuestion">Carregando pergunta...</h3>
+
+    <div class="quiz-options" id="quizOptions"></div>
+
+    <div class="quiz-result" id="quizResult">
+      <p class="quiz-result-emoji">💘</p>
+      <h3 id="quizResultTitle">Resultado</h3>
+      <p id="quizResultText"></p>
+      <button class="btn-secondary" id="quizRestart">Jogar novamente</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENSAGEM FINAL ANTES DO ENVELOPE ===== -->
+<section class="section closing-section">
+  <span class="section-eyebrow">005 — quase lá</span>
+  <h2 class="section-title">Tem mais uma coisinha...</h2>
+  <p class="section-text">
+    Desce mais um pouquinho. Tem uma carta esperando por você aí embaixo. 💌
+  </p>
+</section>
+
+<!-- ===== ENVELOPE / CARTA (FOOTER) ===== -->
+<footer class="envelope-footer">
+  <p class="envelope-label">toque para abrir</p>
+
+  <button id="envelope" class="envelope" aria-label="Abrir carta de amor">
+    <span class="envelope-flap"></span>
+    <span class="envelope-body">
+      <span class="envelope-heart">❤️</span>
+    </span>
+  </button>
+
+  <p class="envelope-footnote">feito com 💛 para você</p>
+</footer>
+
+<!-- Letter flying element -->
+<div id="letterFly" class="letter-fly" aria-hidden="true"></div>
+
+<!-- Modal -->
+<div id="modalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Carta de amor">
+  <div class="modal-content">
+    <button class="close-btn" id="closeModalBtn" aria-label="Fechar carta">✕</button>
+    <div class="terminal-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="terminal-title">carta.txt</span>
+    </div>
+    <div id="typedLetter" class="typed-letter"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
